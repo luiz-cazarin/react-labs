@@ -1,0 +1,103 @@
+.body {
+  padding: 0;
+  height: 92vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.area_text {
+  max-width: 645px;
+  font-weight: 600;
+}
+
+.area_text h1 h2 p {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.button {
+  background: #fb3b83;
+  border-radius: 10px;
+  margin-right: 1rem;
+  line-height: 24.2px;
+  font-weight: 600;
+  font-size: 20px;
+  width: 196px;
+  height: 60px;
+  left: 165px;
+  top: 620px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 0.2s;
+  background: #e93677;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  height: 100%;
+  padding: 1rem;
+}
+
+.art__profile {
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    width: 240px !important;
+    height: 240px !important;
+  }
+
+  .area_text {
+    text-align: center;
+    max-width: 645px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 800px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    margin: 0.2rem;
+    border-radius: 10px;
+    line-height: 24.2px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 156px;
+    height: 40px;
+  }
+
+  .image {
+    width: 240px !important;
+    height: 240px !important;
+  }
+}
