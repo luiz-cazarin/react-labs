@@ -1,6 +1,7 @@
 .nav {
   width: 100vw;
   height: 8vh;
+  overflow: hidden;
   background-color: black;
   color: black;
   display: flex;
@@ -20,8 +21,9 @@
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  cursor: pointer;
 }
 
 .buttons {

@@ -12,13 +12,21 @@ const Navbar = ({ active }: Props) => {
     <>
       <div className={styles.nav}>
         <div className={styles.logo}>
-          <Image src={logo} alt="logo" />
+          <Link href="/">
+            <Image src={logo} alt="logo" />
+          </Link>
         </div>
         <div className={styles.buttons}>
           <ul>
             <li>
               <Link href={"/"}>
-                <a className={ active ? styles.buttom__active : styles.buttom__inative}>Home</a>
+                <a
+                  className={
+                    active ? styles.buttom__active : styles.buttom__inative
+                  }
+                >
+                  Home
+                </a>
               </Link>
             </li>
             <li>

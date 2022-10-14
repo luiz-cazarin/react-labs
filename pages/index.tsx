@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Navbar from "../components/layout/Navbar";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import art from "../assets/img/test-home.png";
+import art from "../assets/img/art-computer.svg";
 
 const Home: NextPage = () => {
   return (

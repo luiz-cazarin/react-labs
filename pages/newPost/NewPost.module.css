@@ -1,0 +1,91 @@
+.body {
+  height: 92vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  width: 100vw;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+}
+
+.header button {
+  width: 196px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #fb3b83;
+}
+
+.header button:hover {
+  background-color: #e73073;
+}
+
+.layout__form {
+  width: 70%;
+  margin: auto;
+}
+
+.box__form {
+  flex-direction: column;
+  padding: 0rem 4rem;
+  display: flex;
+  width: 100%;
+}
+
+.box__form input {
+  background: whitesmoke;
+  font-family: 'Inter';
+  font-size: 16px;
+  border-radius: 5px;
+  color: black;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.box__form textarea {
+  background: whitesmoke;
+  font-size: 16px;
+  font-family: 'Inter';
+  border-radius: 5px;
+  color: black;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.box__form button {
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0 none;
+  outline: 0;
+  background-color: #e73073;
+  margin: 1rem 0;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box__form button:hover {
+  transition: .2s;
+  background-color: #d1316b;
+}

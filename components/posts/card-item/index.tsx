@@ -1,3 +1,4 @@
+import Router from "next/router";
 import styles from "./CardItem.module.css";
 
 interface Props {
@@ -7,8 +8,11 @@ interface Props {
 }
 
 const CardItem = ({ title, subtitle, text }: Props) => {
+  function goToPost() {
+    Router.push("/post");
+  }
   return (
-    <div className={styles.box__content}>
+    <div className={styles.box__content} onClick={goToPost}>
       <h3>{title}</h3>
       <h4>{subtitle}</h4>
       <h5>{text}</h5>
