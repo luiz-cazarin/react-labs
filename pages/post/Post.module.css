@@ -1,6 +1,11 @@
+.body {
+  height: 98vh;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 2rem 4rem;
   width: 100vw;
@@ -27,4 +32,78 @@
 }
 .header button:hover {
   background-color: #e73073;
+}
+
+.content {
+  font-family: "Inter";
+  padding: 2rem;
+  min-height: 70vh;
+  margin: auto;
+  width: 70%;
+}
+
+.content h1 {
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 0.2rem;
+}
+
+.content h2 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .header button {
+    width: 110px;
+    height: 40px;
+    margin: 0 1rem;
+  }
+
+  .content {
+    padding: 1rem;
+    margin: auto;
+    width: 90%;
+  }
+
+  .content h1 {
+    font-size: 22px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
 }
